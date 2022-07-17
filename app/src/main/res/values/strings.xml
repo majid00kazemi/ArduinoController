@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BlueTooth Controller</string>
+    <string name="refresh"> بروزرسانی لیست</string>
+    <string name="on">روشن</string>
+    <string name="off">خاموش</string>
+    <string name="disconnect">قطع ارتباط</string>
+    <string name="does_not_support_bluetooth">از بلوتوث پشتیبانی نمی شود</string>
+    <string name="could_not_find_paired_device">دستگاه جفت شده ایی یافت نشد</string>
+    <string name="bluetooth_opened">بلوتوث روشن شد</string>
+    <string name="bluetooth_closed">بلوتوث خاموش شد</string>
+    <string name="bluetooth_cancelled">بلوتوث کنسل شد</string>
+    <string name="connecting">درحال اتصال…</string>
+    <string name="please_wait">لطفا صبر نمایید</string>
+    <string name="connecting_status">وضعیت اتصال</string>
+</resources>

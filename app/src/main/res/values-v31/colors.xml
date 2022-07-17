@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">@android:color/system_accent1_200</color>
+    <color name="purple_500">@android:color/system_accent1_200</color>
+    <color name="purple_700">@android:color/system_accent1_200</color>
+    <color name="launcher_background_color">#3DDC84</color>
+    <color name="launcher_foreground_android_color">#FFFFFF</color>
+</resources>
