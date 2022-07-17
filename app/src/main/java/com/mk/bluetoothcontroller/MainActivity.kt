@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     private var isConnected = false
 
 
+    @RequiresApi(Build.VERSION_CODES.S)
     @SuppressLint("MissingPermission")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
