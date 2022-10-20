@@ -23,24 +23,28 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import java.io.IOException
 import kotlinx.coroutines.*
+import java.text.SimpleDateFormat
 import java.util.*
 
 class ControlActivity : AppCompatActivity() {
 
-    private var liveData= MutableLiveData<String>()
 
     @SuppressLint("MissingPermission")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_control)
 
+
         mAddress = intent.getStringExtra(MainActivity.EXTRA_ADDRESS).toString()
-        ConnectToDevice(this,findViewById(android.R.id.content),liveData).execute()
+        ConnectToDevice(this,findViewById(android.R.id.content)).execute()
+
 
         openButton.setOnClickListener {
-            sendCommand("1")
+            sendCommand("majid00kazemi@gmail.com")
+
         }
         disconnectDeviceButton.setOnClickListener { disconnect() }
+
 
     }
 
@@ -68,7 +72,7 @@ class ControlActivity : AppCompatActivity() {
         finish()
     }
 
-    private class ConnectToDevice(c: Context, rV: View, liveData: MutableLiveData<String>) : AsyncTask<Void, Void,
+    private class ConnectToDevice(c: Context, rV: View) : AsyncTask<Void, Void,
             String>(){
 
         private var connectSuccess: Boolean = true
