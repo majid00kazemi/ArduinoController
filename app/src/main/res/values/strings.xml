@@ -12,4 +12,5 @@
     <string name="connecting">درحال اتصال…</string>
     <string name="please_wait">لطفا صبر نمایید</string>
     <string name="connecting_status">وضعیت اتصال</string>
+    <string name="open">باز کردن</string>
 </resources>
